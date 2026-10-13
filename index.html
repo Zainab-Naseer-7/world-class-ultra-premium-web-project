@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUREVIA ESTATES | Exceptional Properties. Extraordinary Living.</title>
+  <meta name="description" content="Discover exceptional residences, exclusive private estates and extraordinary investment opportunities worldwide with Aurevia Estates.">
+
+  <!-- Google Fonts: Luxury Serif & Clean Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 for Universal High-Res Vector Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core Luxury Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. LUXURY FIXED NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brand-logo" aria-label="Aurevia Estates Home">
+        <div class="brand-name">AUREVIA <span>ESTATES</span></div>
+        <div class="brand-tagline">Exceptional Living</div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="desktop-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active" data-nav="home">Home</a>
+        <a href="#properties" class="nav-link" data-nav="properties">Properties</a>
+        <a href="#buy" class="nav-link" data-nav="buy">Buy</a>
+        <a href="#rent" class="nav-link" data-nav="rent">Rent</a>
+        <a href="#services" class="nav-link" data-nav="services">Services</a>
+        <a href="#agents" class="nav-link" data-nav="agents">Advisors</a>
+        <a href="#calculator" class="nav-link" data-nav="calculator">Mortgage</a>
+        <a href="#sell" class="nav-link" data-nav="sell">Sell Estate</a>
+        <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Favorites Counter Trigger -->
+        <button class="favorites-header-btn" id="header-favorites-btn" title="View Saved Properties" aria-label="View Saved Properties">
+          <i class="fa-solid fa-heart" style="color: #C5A880;"></i>
+          <span>Saved</span>
+          <span class="favorites-count-badge" id="favorites-badge-count">0</span>
+        </button>
+
+        <!-- CTA Consultation Button -->
+        <a href="#contact" class="btn btn-primary btn-sm btn-consultation" id="btn-header-consultation">
+          <span>Inquire</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand-name">AUREVIA <span>ESTATES</span></div>
+      <button class="drawer-close" id="drawer-close-btn" aria-label="Close Mobile Navigation">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-list">
+      <a href="#home" class="mobile-nav-link" data-mobile-nav="home">Home</a>
+      <a href="#properties" class="mobile-nav-link" data-mobile-nav="properties">All Properties</a>
+      <a href="#buy" class="mobile-nav-link" data-mobile-nav="buy">Buy Residencies</a>
+      <a href="#rent" class="mobile-nav-link" data-mobile-nav="rent">Luxury Rentals</a>
+      <a href="#services" class="mobile-nav-link" data-mobile-nav="services">Our Services</a>
+      <a href="#agents" class="mobile-nav-link" data-mobile-nav="agents">Private Advisors</a>
+      <a href="#calculator" class="mobile-nav-link" data-mobile-nav="calculator">Mortgage Calculator</a>
+      <a href="#sell" class="mobile-nav-link" data-mobile-nav="sell">Sell Your Estate</a>
+      <a href="#contact" class="mobile-nav-link" data-mobile-nav="contact">Private Office</a>
+      <a href="#favorites" class="mobile-nav-link" data-mobile-nav="favorites">Saved Properties (<span id="drawer-favorites-count">0</span>)</a>
+    </nav>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-sm w-100" id="btn-mobile-consultation" style="width: 100%;">
+        <span>Schedule Private Consultation</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       2. CINEMATIC HERO SECTION & SEARCH PANEL
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-award"></i>
+        <span>World-Class Luxury Real Estate</span>
+      </div>
+      <h1 class="hero-headline">
+        Find a Place Worth<br><span>Calling Home.</span>
+      </h1>
+      <p class="hero-subheading">
+        Discover exceptional residences, exclusive properties and extraordinary investment opportunities with Aurevia Estates.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#properties" class="btn btn-primary btn-lg" id="btn-hero-explore">
+          <span>Explore Collection</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline-gold btn-lg" id="btn-hero-contact">
+          <span>Private Advisory</span>
+        </a>
+      </div>
+
+      <!-- Floating Luxury Quick Search Panel -->
+      <div class="hero-search-panel" id="hero-search-panel">
+        <div class="search-tabs">
+          <button class="search-tab-btn active" id="tab-hero-all" data-status="all">All Properties</button>
+          <button class="search-tab-btn" id="tab-hero-buy" data-status="for-sale">For Sale</button>
+          <button class="search-tab-btn" id="tab-hero-rent" data-status="for-rent">For Lease</button>
+        </div>
+
+        <div class="search-grid">
+          <!-- Location Field -->
+          <div class="search-field">
+            <label class="search-label" for="hero-location-select">Location</label>
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-location-dot"></i>
+              <select id="hero-location-select" class="search-select" aria-label="Select Location">
+                <option value="all">Global (All Locations)</option>
+                <option value="Beverly Hills">Beverly Hills, CA</option>
+                <option value="New York">New York, NY</option>
+                <option value="Miami Beach">Miami Beach, FL</option>
+                <option value="London">London, UK</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Dubai">Dubai, UAE</option>
+                <option value="Cap d'Antibes">French Riviera</option>
+                <option value="Lake Como">Lake Como, Italy</option>
+                <option value="Aspen">Aspen, CO</option>
+                <option value="St. Moritz">St. Moritz, Swiss Alps</option>
+                <option value="Tokyo">Tokyo, Japan</option>
+                <option value="Zurich">Zurich, Switzerland</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Property Type Field -->
+          <div class="search-field">
+            <label class="search-label" for="hero-type-select">Property Type</label>
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-house-chimney-window"></i>
+              <select id="hero-type-select" class="search-select" aria-label="Select Property Type">
+                <option value="all">All Architectural Types</option>
+                <option value="Villa">Trophy Villas</option>
+                <option value="Penthouse">Sky Penthouses</option>
+                <option value="Waterfront">Waterfront Estates</option>
+                <option value="Mansion">Historic Mansions</option>
+                <option value="Chalet">Alpine Chalets</option>
+                <option value="Apartment">Designer Suites</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Price Range Field -->
+          <div class="search-field">
+            <label class="search-label" for="hero-price-select">Price Range</label>
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-tag"></i>
+              <select id="hero-price-select" class="search-select" aria-label="Select Price Range">
+                <option value="all">Any Valuation</option>
+                <option value="under-25m">Under $25,000,000</option>
+                <option value="25m-35m">$25,000,000 – $35,000,000</option>
+                <option value="above-35m">$35,000,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Bedrooms Field -->
+          <div class="search-field">
+            <label class="search-label" for="hero-beds-select">Bedrooms</label>
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-bed"></i>
+              <select id="hero-beds-select" class="search-select" aria-label="Select Bedrooms">
+                <option value="all">Any Bedrooms</option>
+                <option value="4">4+ Suites</option>
+                <option value="6">6+ Suites</option>
+                <option value="8">8+ Suites</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Hero Search Action Button -->
+          <button class="btn btn-primary btn-search" id="hero-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. AGENCY STATS STRIP
+       ======================================================================== -->
+  <section class="stats-strip" id="stats-strip">
+    <div class="container">
+      <div class="stats-grid" id="stats-container">
+        <!-- Dynamically rendered from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. GLOBAL PROPERTY CATALOG & ADVANCED FILTER ENGINE
+       ======================================================================== -->
+  <section class="properties-section" id="properties">
+    <div class="container">
+      <!-- Section Title Wrap -->
+      <div class="catalog-header-wrap">
+        <div>
+          <div class="section-tag">Exclusive Portfolio</div>
+          <h2 class="section-title">Curated Residences</h2>
+          <p class="section-subtitle">
+            Explore architectural masterworks, waterfront compounds, and bespoke sky penthouses curated by our international private advisory team.
+          </p>
+        </div>
+      </div>
+
+      <!-- Filter Control Bar -->
+      <div class="filter-control-bar" id="filter-control-bar">
+        <div class="filter-row-primary">
+          <!-- Keyword Search -->
+          <div class="filter-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="filter-keyword-input" class="filter-search-input" placeholder="Search by estate name, location, or architectural style..." aria-label="Search Properties">
+          </div>
+
+          <!-- Sorting & Actions -->
+          <div class="filter-actions-group">
+            <select id="sort-select" class="sort-select" aria-label="Sort Properties">
+              <option value="featured">Featured First</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="popular">Most Popular</option>
+              <option value="newest">Newest Additions</option>
+            </select>
+
+            <button class="btn-toggle-filters" id="btn-toggle-filters">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Filters</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Collapsible Advanced Filters Drawer -->
+        <div class="advanced-filters-panel" id="advanced-filters-panel">
+          <div class="advanced-filters-grid">
+            <!-- Status Filter -->
+            <div class="filter-group">
+              <label class="filter-group-label" for="filter-status-select">Listing Status</label>
+              <select id="filter-status-select" class="filter-dropdown">
+                <option value="all">All Transactions</option>
+                <option value="for-sale">For Sale (Acquisitions)</option>
+                <option value="for-rent">For Lease (Prime Rentals)</option>
+              </select>
+            </div>
+
+            <!-- Property Type Filter -->
+            <div class="filter-group">
+              <label class="filter-group-label" for="filter-type-select">Property Type</label>
+              <select id="filter-type-select" class="filter-dropdown">
+                <option value="all">All Architecture</option>
+                <option value="Villa">Trophy Villa</option>
+                <option value="Penthouse">Sky Penthouse</option>
+                <option value="Waterfront">Waterfront Estate</option>
+                <option value="Mansion">Historic Mansion</option>
+                <option value="Chalet">Alpine Chalet</option>
+                <option value="Apartment">Designer Residence</option>
+              </select>
+            </div>
+
+            <!-- Minimum Bathrooms -->
+            <div class="filter-group">
+              <label class="filter-group-label" for="filter-baths-select">Bathrooms</label>
+              <select id="filter-baths-select" class="filter-dropdown">
+                <option value="all">Any Bathrooms</option>
+                <option value="4">4+ Baths</option>
+                <option value="6">6+ Baths</option>
+                <option value="8">8+ Baths</option>
+              </select>
+            </div>
+
+            <!-- Minimum Living Area (Sq Ft) -->
+            <div class="filter-group">
+              <label class="filter-group-label" for="filter-area-select">Minimum Area</label>
+              <select id="filter-area-select" class="filter-dropdown">
+                <option value="all">Any Living Area</option>
+                <option value="6000">6,000+ sq ft</option>
+                <option value="10000">10,000+ sq ft</option>
+                <option value="15000">15,000+ sq ft</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Luxury Amenities Selection -->
+          <div>
+            <label class="filter-group-label">Exclusive Amenities</label>
+            <div class="amenities-tag-cloud" id="amenities-tag-cloud">
+              <label class="amenity-chip"><input type="checkbox" value="Pool"><span><i class="fa-solid fa-water-ladder"></i> Infinity Pool</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Helipad"><span><i class="fa-solid fa-helicopter"></i> Private Helipad</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Private Dock"><span><i class="fa-solid fa-anchor"></i> Superyacht Dock</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Wine Cellar"><span><i class="fa-solid fa-wine-glass"></i> Wine Vault</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Spa"><span><i class="fa-solid fa-spa"></i> Wellness Spa</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Home Theater"><span><i class="fa-solid fa-film"></i> Dolby Cinema</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Smart Home"><span><i class="fa-solid fa-network-wired"></i> Smart Automation</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Elevator"><span><i class="fa-solid fa-elevator"></i> Private Elevator</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Garage"><span><i class="fa-solid fa-warehouse"></i> Collector's Garage</span></label>
+              <label class="amenity-chip"><input type="checkbox" value="Gym"><span><i class="fa-solid fa-dumbbell"></i> Fitness Suite</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catalog Status Sub-bar -->
+      <div class="catalog-status-bar">
+        <div class="results-counter" id="results-counter">
+          Showing <span id="results-count">24</span> Exclusive Residences
+        </div>
+        <button class="btn-clear-filters" id="btn-clear-all-filters">
+          <i class="fa-solid fa-rotate-left"></i>
+          <span>Clear All Filters</span>
+        </button>
+      </div>
+
+      <!-- Properties Grid Container -->
+      <div class="properties-grid" id="properties-grid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. FAVORITES DEDICATED VIEW (SURFACES WHEN CLICKED OR ACCESSED VIA #favorites)
+       ======================================================================== -->
+  <section class="favorites-section" id="favorites-section">
+    <div class="container">
+      <div class="favorites-header">
+        <div>
+          <div class="section-tag">Curated Portfolio</div>
+          <h2 class="section-title">Saved Properties</h2>
+          <p class="section-subtitle">
+            Review your shortlisted trophy estates, compare architectural specifications, or request a private viewing dossier.
+          </p>
+        </div>
+        <div class="favorites-actions">
+          <button class="btn btn-outline btn-sm" id="btn-clear-all-favorites">
+            <i class="fa-solid fa-trash-can"></i>
+            <span>Clear Saved List</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Saved Properties Grid Container -->
+      <div class="properties-grid" id="favorites-grid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. BESPOKE SERVICES SECTION
+       ======================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 750px;">
+        <div class="section-tag light">Private Client Services</div>
+        <h2 class="section-title" style="color: #FFFFFF;">Bespoke Advisory</h2>
+        <p class="section-subtitle mx-auto" style="color: var(--dark-text-muted);">
+          Comprehensive representation for royal family offices, sovereign funds, and discerning international collectors across every phase of ownership.
+        </p>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+        <!-- Dynamically rendered from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. GLOBAL PRIVATE ADVISORS & PARTNERS
+       ======================================================================== -->
+  <section class="agents-section" id="agents">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 750px;">
+        <div class="section-tag">Elite Representation</div>
+        <h2 class="section-title">Private Office Advisors</h2>
+        <p class="section-subtitle mx-auto">
+          Our senior partners command discreet access to the world’s most significant off-market estates and confidential transactions.
+        </p>
+      </div>
+
+      <div class="agents-grid" id="agents-grid">
+        <!-- Dynamically rendered from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. MORTGAGE & FINANCIAL INVESTMENT CALCULATOR
+       ======================================================================== -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 720px;">
+        <div class="section-tag">Financial Architecture</div>
+        <h2 class="section-title">Investment Calculator</h2>
+        <p class="section-subtitle mx-auto">
+          Model luxury acquisition finance terms, estimated monthly obligations, and private banking capital structure scenarios.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calculator-grid">
+          <!-- Inputs Column -->
+          <div class="calc-inputs-group">
+            <!-- Property Valuation -->
+            <div>
+              <div class="calc-field-label">
+                <span>Property Valuation ($)</span>
+                <span id="calc-price-display">$25,000,000</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-price-slider" min="5000000" max="60000000" step="500000" value="25000000">
+            </div>
+
+            <!-- Down Payment Percentage -->
+            <div>
+              <div class="calc-field-label">
+                <span>Down Payment (%)</span>
+                <span id="calc-down-display">30% ($7,500,000)</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-down-slider" min="10" max="60" step="5" value="30">
+            </div>
+
+            <!-- Interest Rate Percentage -->
+            <div>
+              <div class="calc-field-label">
+                <span>Interest Rate (%)</span>
+                <span id="calc-interest-display">5.85%</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-interest-slider" min="2.5" max="9.5" step="0.05" value="5.85">
+            </div>
+
+            <!-- Loan Term -->
+            <div>
+              <div class="calc-field-label">
+                <span>Financing Term</span>
+                <span id="calc-term-display">30 Years Fixed</span>
+              </div>
+              <input type="range" class="calc-slider" id="calc-term-slider" min="10" max="30" step="5" value="30">
+            </div>
+          </div>
+
+          <!-- Result Column -->
+          <div class="calc-result-box">
+            <div class="calc-result-title">Estimated Monthly Payment</div>
+            <div class="calc-result-value" id="calc-monthly-payment">$103,240</div>
+            <div class="calc-breakdown">
+              <div class="calc-breakdown-row">
+                <span>Principal & Interest</span>
+                <span id="calc-breakdown-pi">$103,240 / mo</span>
+              </div>
+              <div class="calc-breakdown-row">
+                <span>Loan Amount</span>
+                <span id="calc-breakdown-loan">$17,500,000</span>
+              </div>
+              <div class="calc-breakdown-row">
+                <span>Estimated Property Taxes (1.1%)</span>
+                <span id="calc-breakdown-tax">$22,916 / mo</span>
+              </div>
+              <div class="calc-breakdown-row">
+                <span>Comprehensive Insurance</span>
+                <span id="calc-breakdown-insurance">$4,166 / mo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. CLIENT TESTIMONIALS
+       ======================================================================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 750px;">
+        <div class="section-tag light">Privileged Relationships</div>
+        <h2 class="section-title" style="color: #FFFFFF;">Client Testimonials</h2>
+        <p class="section-subtitle mx-auto" style="color: var(--dark-text-muted);">
+          Our enduring commitment to discretion, market intelligence, and white-glove advisory.
+        </p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Dynamically rendered from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. SELL PROPERTY / VALUATION DOSSIER FORM
+       ======================================================================== -->
+  <section class="sell-section" id="sell">
+    <div class="container">
+      <div class="sell-container-card">
+        <!-- Sidebar -->
+        <div class="sell-sidebar">
+          <div class="sell-sidebar-content">
+            <div class="section-tag light">List With Aurevia</div>
+            <h3>Discreet Global Marketing</h3>
+            <p>
+              Present your estate to vetted international principals, sovereign wealth offices, and high-net-worth investors across 38 prime global markets.
+            </p>
+            <div class="sell-perks-list">
+              <div class="sell-perk-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Strict non-disclosure agreements & principal vetting</span>
+              </div>
+              <div class="sell-perk-item">
+                <i class="fa-solid fa-film"></i>
+                <span>Cinematic 8K video production & architectural photography</span>
+              </div>
+              <div class="sell-perk-item">
+                <i class="fa-solid fa-globe"></i>
+                <span>Editorial placement in FT, Robb Report & Architectural Digest</span>
+              </div>
+              <div class="sell-perk-item">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Confidential off-market private placement option</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sell Form -->
+        <div class="sell-form-wrapper">
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Request Estate Valuation</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.75rem; font-size: 0.92rem;">
+            Submit your property credentials for a confidential valuation and positioning proposal.
+          </p>
+
+          <form id="sell-estate-form" novalidate>
+            <div class="form-banner" id="sell-form-banner"></div>
+
+            <div class="form-grid">
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="sell-name">Owner / Representative Name <span class="req">*</span></label>
+                <input type="text" id="sell-name" class="form-control" placeholder="e.g. Lord Charles Kensington" required>
+                <div class="field-error-msg" id="sell-name-error">Please provide a valid full name.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label class="form-label" for="sell-email">Email Address <span class="req">*</span></label>
+                <input type="email" id="sell-email" class="form-control" placeholder="c.kensington@domain.com" required>
+                <div class="field-error-msg" id="sell-email-error">Please provide a valid email address.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label class="form-label" for="sell-phone">Direct Phone Number <span class="req">*</span></label>
+                <input type="tel" id="sell-phone" class="form-control" placeholder="+1 (310) 000-0000" required>
+                <div class="field-error-msg" id="sell-phone-error">Please enter a valid phone number.</div>
+              </div>
+
+              <!-- Property Address/Location -->
+              <div class="form-group">
+                <label class="form-label" for="sell-address">Property Location / Address <span class="req">*</span></label>
+                <input type="text" id="sell-address" class="form-control" placeholder="e.g. Bel-Air, Los Angeles or Cap d'Antibes" required>
+                <div class="field-error-msg" id="sell-address-error">Please provide the property address or enclave.</div>
+              </div>
+
+              <!-- Property Type -->
+              <div class="form-group">
+                <label class="form-label" for="sell-type">Property Classification <span class="req">*</span></label>
+                <select id="sell-type" class="form-control" required>
+                  <option value="">Select Architecture</option>
+                  <option value="Villa">Trophy Villa</option>
+                  <option value="Penthouse">Sky Penthouse</option>
+                  <option value="Waterfront">Waterfront Estate</option>
+                  <option value="Mansion">Historic Manor</option>
+                  <option value="Chalet">Alpine Chalet</option>
+                </select>
+                <div class="field-error-msg" id="sell-type-error">Please select a property classification.</div>
+              </div>
+
+              <!-- Target Price / Valuation -->
+              <div class="form-group">
+                <label class="form-label" for="sell-price">Target Valuation / Asking Price ($) <span class="req">*</span></label>
+                <input type="number" id="sell-price" class="form-control" placeholder="e.g. 28000000" min="1000000" required>
+                <div class="field-error-msg" id="sell-price-error">Please enter a valid estimated valuation.</div>
+              </div>
+
+              <!-- Bedrooms & Bathrooms -->
+              <div class="form-group">
+                <label class="form-label" for="sell-beds">Bedrooms & Bathrooms</label>
+                <input type="text" id="sell-beds" class="form-control" placeholder="e.g. 7 Beds, 9 Baths">
+              </div>
+
+              <!-- Living Area -->
+              <div class="form-group">
+                <label class="form-label" for="sell-area">Living Area (Sq Ft)</label>
+                <input type="number" id="sell-area" class="form-control" placeholder="e.g. 14500">
+              </div>
+
+              <!-- Description -->
+              <div class="form-group col-span-2">
+                <label class="form-label" for="sell-desc">Estate Details & Notable Features <span class="req">*</span></label>
+                <textarea id="sell-desc" class="form-control" placeholder="Include architectural history, grounds acreage, privacy features, and preferred sale timeline..." required></textarea>
+                <div class="field-error-msg" id="sell-desc-error">Please include a brief description of the estate.</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <button type="submit" class="btn btn-primary btn-lg" id="btn-submit-sell">
+                <span class="btn-text">Submit Valuation Request</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. CONTACT & PRIVATE OFFICE
+       ======================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="text-center mx-auto" style="max-width: 720px;">
+        <div class="section-tag">Private Concierge</div>
+        <h2 class="section-title">Inquire With Aurevia</h2>
+        <p class="section-subtitle mx-auto">
+          Connect with our senior partners for discreet property acquisitions, confidential sales, or bespoke global search briefs.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Cards -->
+        <div class="contact-info-panel">
+          <div class="contact-info-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>Global Headquarters</h4>
+              <p>Rodeo Drive & Wilshire Boulevard<br>Beverly Hills, California 90212</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>Private Office Concierge</h4>
+              <p>Direct: +1 (310) 892-4400<br>London: +44 20 7946 0900</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>Confidential Inquiries</h4>
+              <p>privateoffice@aureviaestates.com<br>advisory@aureviaestates.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon-wrap">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-card-text">
+              <h4>Advisory Hours</h4>
+              <p>Monday – Sunday: 24/7 Dedicated Client Desk</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-panel">
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Send a Confidential Note</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1.75rem; font-size: 0.92rem;">
+            All inquiries are handled with banking-grade confidentiality and strict discretion.
+          </p>
+
+          <form id="general-contact-form" novalidate>
+            <div class="form-banner" id="contact-form-banner"></div>
+
+            <div class="form-grid">
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Full Name <span class="req">*</span></label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Victoria Sterling" required>
+                <div class="field-error-msg" id="contact-name-error">Please enter your full name.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address <span class="req">*</span></label>
+                <input type="email" id="contact-email" class="form-control" placeholder="v.sterling@domain.com" required>
+                <div class="field-error-msg" id="contact-email-error">Please enter a valid email address.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+1 (555) 123-4567" required>
+                <div class="field-error-msg" id="contact-phone-error">Please provide a contact phone number.</div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Inquiry Subject <span class="req">*</span></label>
+                <select id="contact-subject" class="form-control" required>
+                  <option value="Property Acquisition">Property Acquisition</option>
+                  <option value="Off-Market Sourcing">Off-Market Sourcing</option>
+                  <option value="Estate Listing & Sale">Estate Listing & Sale</option>
+                  <option value="Ultra-Luxury Rental">Ultra-Luxury Rental</option>
+                  <option value="Portfolio Investment">Portfolio Investment</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group col-span-2">
+                <label class="form-label" for="contact-message">Message / Acquisition Brief <span class="req">*</span></label>
+                <textarea id="contact-message" class="form-control" placeholder="Detail your specifications, desired enclaves, timeline and preferences..." required></textarea>
+                <div class="field-error-msg" id="contact-message-error">Please write a brief message.</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <button type="submit" class="btn btn-primary btn-lg" id="btn-submit-contact">
+                <span class="btn-text">Submit Inquiry</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. INTERACTIVE MODALS
+       ======================================================================== -->
+  <!-- A. Property Details Modal -->
+  <div class="modal-overlay" id="property-detail-modal" aria-hidden="true">
+    <div class="modal-card" id="property-modal-content">
+      <button class="modal-close-btn" id="detail-modal-close" aria-label="Close Details Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="property-detail-layout" id="modal-property-body">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- B. Schedule Viewing Modal -->
+  <div class="modal-overlay" id="schedule-tour-modal" aria-hidden="true">
+    <div class="modal-card" style="max-width: 650px;">
+      <button class="modal-close-btn" id="tour-modal-close" aria-label="Close Schedule Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div style="padding: 2.75rem 2.5rem;">
+        <div class="section-tag">Private Tour</div>
+        <h3 style="font-size: 2rem; margin-bottom: 0.35rem;" id="schedule-modal-prop-title">Schedule a Viewing</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.92rem;">
+          Arrange a private escorted walkthrough or live high-definition virtual tour with the listing partner.
+        </p>
+
+        <form id="schedule-tour-form" novalidate>
+          <div class="form-banner" id="tour-form-banner"></div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="tour-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="tour-name" class="form-control" placeholder="Charles Sterling" required>
+              <div class="field-error-msg" id="tour-name-error">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tour-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="tour-email" class="form-control" placeholder="charles@domain.com" required>
+              <div class="field-error-msg" id="tour-email-error">Please enter a valid email.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tour-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="tour-phone" class="form-control" placeholder="+1 (310) 555-0199" required>
+              <div class="field-error-msg" id="tour-phone-error">Please enter a phone number.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tour-type-select">Viewing Format</label>
+              <select id="tour-type-select" class="form-control">
+                <option value="In-Person Escorted Tour">In-Person Escorted Tour</option>
+                <option value="Confidential Virtual Video Tour">Confidential Virtual Video Tour</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tour-date">Preferred Date <span class="req">*</span></label>
+              <input type="date" id="tour-date" class="form-control" required>
+              <div class="field-error-msg" id="tour-date-error">Please select a preferred date.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tour-time">Preferred Time <span class="req">*</span></label>
+              <select id="tour-time" class="form-control" required>
+                <option value="">Select Time Window</option>
+                <option value="Morning (10:00 AM – 12:00 PM)">Morning (10:00 AM – 12:00 PM)</option>
+                <option value="Afternoon (1:00 PM – 3:00 PM)">Afternoon (1:00 PM – 3:00 PM)</option>
+                <option value="Sunset / Evening (4:30 PM – 6:30 PM)">Sunset / Evening (4:30 PM – 6:30 PM)</option>
+              </select>
+              <div class="field-error-msg" id="tour-time-error">Please select a time window.</div>
+            </div>
+
+            <div class="form-group col-span-2">
+              <label class="form-label" for="tour-notes">Special Requests / Aircraft or Security Protocol</label>
+              <textarea id="tour-notes" class="form-control" style="min-height: 80px;" placeholder="Mention private security detail, helipad landing requirements, or NDA preferences..."></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.75rem;">
+            <button type="submit" class="btn btn-primary btn-lg w-100" id="btn-submit-tour" style="width: 100%;">
+              <span class="btn-text">Confirm Viewing Request</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- C. Service Learn More Modal -->
+  <div class="modal-overlay" id="service-modal" aria-hidden="true">
+    <div class="modal-card" style="max-width: 650px;">
+      <button class="modal-close-btn" id="service-modal-close" aria-label="Close Service Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div style="padding: 2.75rem 2.5rem;" id="service-modal-body">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- D. Fullscreen Lightbox Viewer -->
+  <div class="lightbox-overlay" id="lightbox-overlay" aria-hidden="true">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close Lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img id="lightbox-active-img" class="lightbox-img" src="" alt="Aurevia Estates Fullscreen View">
+    </div>
+    <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next Image">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- ========================================================================
+       13. FLOATING TOAST NOTIFICATION SYSTEM
+       ======================================================================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ========================================================================
+       14. LUXURY FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-column">
+          <div class="brand-name">AUREVIA <span>ESTATES</span></div>
+          <div class="brand-tagline">Exceptional Living</div>
+          <p>
+            “Exceptional Properties. Extraordinary Living.” Aurevia Estates is an internationally recognized private brokerage specializing in prime and ultra-prime residential architecture.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="footer-social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" class="footer-social-link" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com" class="footer-social-link" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <div class="footer-column-title">Portfolios</div>
+          <ul class="footer-links-list">
+            <li><a href="#properties" class="footer-link">All Residences</a></li>
+            <li><a href="#buy" class="footer-link">Private Acquisitions</a></li>
+            <li><a href="#rent" class="footer-link">Luxury Leasing</a></li>
+            <li><a href="#sell" class="footer-link">Sell Your Estate</a></li>
+            <li><a href="#favorites" class="footer-link">Saved Properties</a></li>
+          </ul>
+        </div>
+
+        <!-- Private Office -->
+        <div>
+          <div class="footer-column-title">Advisory</div>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Client Services</a></li>
+            <li><a href="#agents" class="footer-link">Private Advisors</a></li>
+            <li><a href="#calculator" class="footer-link">Investment Calculator</a></li>
+            <li><a href="#contact" class="footer-link">Global Enclaves</a></li>
+            <li><a href="#contact" class="footer-link">Confidential NDA Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter / Private Intelligence -->
+        <div>
+          <div class="footer-column-title">Private Intelligence</div>
+          <p class="footer-newsletter-text">
+            Receive our quarterly journal of off-market acquisitions, sovereign market trends, and architectural monographs.
+          </p>
+          <form class="footer-newsletter-form" id="newsletter-form">
+            <input type="email" class="footer-newsletter-input" placeholder="Enter private email" required aria-label="Private email address">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Aurevia Estates International Realty LLC. All Rights Reserved. Equal Housing Opportunity.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#contact" class="footer-link">Privacy Policy</a>
+          <a href="#contact" class="footer-link">Terms of Service</a>
+          <a href="#contact" class="footer-link">Sovereign Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Modules (Standard ES6, Zero Build Needed) -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
